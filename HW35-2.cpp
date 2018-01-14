@@ -1,0 +1,22 @@
+// 180105 ¿Ãº≠øµ
+
+#pragma warning(disable : 4996)
+#include <stdio.h>
+
+int main() {
+	int i;
+	for (i = 1; i <= 100; i++) {
+		if (i % 3 == 0 && i % 5 != 0) {
+			printf("   *");
+		}
+		else if (i % 5 == 0 && i % 3 != 0) {
+			printf("   #");
+		}
+		else {
+			printf("%4d", i);
+		}
+		if (i % 10 == 0) {
+			printf("\n");
+		}
+	}
+}
